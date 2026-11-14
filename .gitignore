@@ -1,0 +1,9 @@
+# Large local EPA inputs and computed outputs outside this verified release
+SDWA_latest_downloads.zip
+raw_source/
+verified_output/
+robustness_output/
+unkeyed_output/
+__pycache__/
+*.pyc
+.DS_Store

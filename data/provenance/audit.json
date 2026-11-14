@@ -1,0 +1,31 @@
+{
+  "snapshot": "2026Q3",
+  "states_prespecified": [
+    "MS",
+    "AL",
+    "LA",
+    "AR",
+    "TN"
+  ],
+  "fixed_cohort": "active CWS/NTNCWS in source snapshot; NOT historical active populations per year",
+  "year_rule": "year of NON_COMPL_PER_BEGIN_DATE (newly starting violations only)",
+  "method": "one frozen quarterly snapshot; unique (PWSID,VIOLATION_ID) then PWS-year binary flags",
+  "year2024_exclusion": "only VIOLATION_CODE=2E (preserve other health-based codes and all 4G)",
+  "source_status": "this output may only be labeled empirical if generated from the actual EPA ZIP",
+  "unique_violations_selected": 8306,
+  "raw_rows_2E_2024_health_flagged": 451,
+  "raw_rows_4G_2024_nonhealth": 406,
+  "audit": {
+    "duplicate_rows_within_snapshot": 15222,
+    "rows_without_parseable_begin_date": 22561,
+    "2E_not_health_based": 0,
+    "4G_health_based": 0
+  },
+  "warning": "Not EPA official annual uncorrected-violation prevalence; no inference about observed contamination, causal policy effect, or historical 2023/24 active-system denominators.",
+  "files_used_in_zip": {
+    "SDWA_PUB_WATER_SYSTEMS.csv": "SDWA_PUB_WATER_SYSTEMS.csv",
+    "SDWA_VIOLATIONS_ENFORCEMENT.csv": "SDWA_VIOLATIONS_ENFORCEMENT.csv"
+  },
+  "input_filename": "SDWA_latest_downloads.zip",
+  "input_zip_sha256": "4d92d5f46b423742d5fd608257dc63ef666a832d9211199c28434cd8f41dccb0"
+}

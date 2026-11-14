@@ -1,0 +1,74 @@
+{
+  "epa_zip_sha256": "4d92d5f46b423742d5fd608257dc63ef666a832d9211199c28434cd8f41dccb0",
+  "frozen_snapshot": "2026Q3",
+  "source_files": {
+    "pws": "SDWA_PUB_WATER_SYSTEMS.csv",
+    "violations": "SDWA_VIOLATIONS_ENFORCEMENT.csv"
+  },
+  "baseline_verification": "PASS: 5 state denominators, 2023/2024 counts, 2E counts and ranks match prior output",
+  "existing_baseline": {
+    "active_snapshot_systems": 3781,
+    "unique_onset_violations_2023_2024_original": 8306
+  },
+  "audit_counts": {
+    "raw_rows_in_candidate_universe": 749073,
+    "duplicate_raw_violation_rows": 522745,
+    "original_a_raw_rows_with_undated_onset": 22561,
+    "raw_rows_missing_violation_id": 23109,
+    "raw_undated_rows_missing_violation_id": 23109,
+    "unique_violations_in_candidate_universe_all_years": 203219,
+    "undated_ids_resolved_by_dated_duplicate": 0,
+    "unique_violations_still_undated": 0
+  },
+  "unkeyed_undated_raw_rows_by_state": {
+    "MS": {
+      "rows_without_id": 9523,
+      "rows_health_unknown": 9523
+    },
+    "AL": {
+      "rows_without_id": 1489,
+      "rows_health_unknown": 1489
+    },
+    "LA": {
+      "rows_without_id": 5827,
+      "rows_health_unknown": 5827
+    },
+    "AR": {
+      "rows_without_id": 4081,
+      "rows_health_unknown": 4081
+    },
+    "TN": {
+      "rows_without_id": 2189,
+      "rows_health_unknown": 2189
+    }
+  },
+  "unkeyed_handling": "Undated rows with blank VIOLATION_ID are not assigned invented IDs, not counted as unique violations, and cannot alter observed 2023/2024 indicators. Their potentially health-based flags are included at system level in the extreme 2024 stress only; unknown health flags treated as possibly health-based; unknown codes treated as potentially non-2E.",
+  "pws_candidate_audit": {},
+  "cohort_results": {
+    "A_2026_snapshot_active": {
+      "cohort_n": 3781,
+      "observed_pairwise_reversals": 3,
+      "extreme_undated_assignment_pairwise_reversals": 0
+    },
+    "B_active_first_reported_by_2023": {
+      "cohort_n": 3768,
+      "observed_pairwise_reversals": 3,
+      "extreme_undated_assignment_pairwise_reversals": 0
+    },
+    "C_first_reported_by_2023_not_deactivated_by_2024_proxy": {
+      "cohort_n": 3853,
+      "observed_pairwise_reversals": 3,
+      "extreme_undated_assignment_pairwise_reversals": 0
+    }
+  },
+  "methodological_cautions": [
+    "All undated-onset violations assigned to 2024 is a deliberately extreme upper stress scenario, NOT a data imputation or estimated 2024 count.",
+    "The lower bound counts only violations with parseable 2024 onset; the extreme stress adds all still-undated health-based or potentially health-based records, including rows without violation IDs at PWS-flag level. True-year membership is unknown.",
+    "Missing VIOLATION_ID on undated rows prevents unique-event counts for those rows, NOT conservative PWS-level possible-status stress. No IDs are imputed.",
+    "Rank outcomes under the single all-undated-to-2024 scenario do NOT exhaust rankings under every possible allocation of undated onset dates.",
+    "FIRST_REPORTED_DATE measures first database report, NOT actual operation start or activation date.",
+    "PWS_DEACTIVATION_DATE and snapshot activity alone cannot establish exact historical 2023/2024 system populations, especially for reopenings and incomplete dates.",
+    "The retrospective cohort proxy cannot substitute for historical quarterly snapshots; neither proxy changes original manuscript estimates.",
+    "No causal interpretation or actual drinking-water contamination measurement is warranted."
+  ]
+}

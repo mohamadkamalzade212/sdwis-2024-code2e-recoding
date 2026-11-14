@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "Please cite this software and its associated article once publication details are available."
+type: software
+title: "SDWIS 2024 2E indicator sensitivity: five-state replication code and derived outputs"
+version: "0.1.0"
+authors:
+  - family-names: Kamalzadeh
+    given-names: Mohammad
+    orcid: "https://orcid.org/0009-0006-9918-6467"
+keywords:
+  - drinking water
+  - SDWIS
+  - performance measurement
+  - administrative indicators

@@ -1,6 +1,6 @@
 # SDWIS 2024 code-2E indicator sensitivity — five-state replication materials
 
-**Status:** public replication materials, version 0.1; **no DOI has yet been assigned** and the national EPA raw archive was processed on the author's local machine, not independently reprocessed in this repository. This repository is a research working release, not a peer-reviewed publication.
+**Status:** public replication materials, archived release `v0.1.0` with DOI **[10.5281/zenodo.24214908](https://doi.org/10.5281/zenodo.24214908)**. The national EPA raw archive was processed on the author's local machine, not independently reprocessed in this repository. This repository is a research working release, not a peer-reviewed publication.
 
 ## Scope and findings
 
@@ -74,7 +74,11 @@ A generative AI assistant (ChatGPT, OpenAI) supported script design, debugging, 
 
 ## Citation and archiving
 
-`CITATION.cff` contains author and title information but **does not claim any DOI**. After author review, repository publication, and an initial GitHub release, link the public GitHub repository to Zenodo (https://zenodo.org/) to obtain a persistent release DOI, then update journal Data Availability and citation details. Publishing a repository alone does **not** make it an archived DOI deposit.
+The `v0.1.0` release was archived in Zenodo with the version DOI **[10.5281/zenodo.24214908](https://doi.org/10.5281/zenodo.24214908)**. The corresponding [GitHub release](https://github.com/mohamadkamalzade212/sdwis-2024-code2e-recoding/releases/tag/v0.1.0) is public.
+
+**Suggested citation:** Kamalzadeh, M. (2026). *SDWIS 2024 2E indicator sensitivity: five-state replication code and derived outputs* (Version 0.1.0) [Research software and derived outputs]. Zenodo. https://doi.org/10.5281/zenodo.24214908
+
+**Archival note:** The DOI identifies the frozen Zenodo archive of `v0.1.0`, not later changes on the GitHub `main` branch. This retrospective citation update is not part of the frozen release. New research changes should be archived in a new release. DOI registration does not imply journal peer review or independent reprocessing of the original multi-gigabyte EPA ZIP.
 
 ## Licensing
 

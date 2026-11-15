@@ -1,8 +1,11 @@
 cff-version: 1.2.0
-message: "Please cite this software and its associated article once publication details are available."
+message: "Please cite the archived version of these research scripts and derived outputs."
 type: software
 title: "SDWIS 2024 2E indicator sensitivity: five-state replication code and derived outputs"
 version: "0.1.0"
+date-released: 2026-11-14
+doi: "10.5281/zenodo.24214908"
+url: "https://github.com/mohamadkamalzade212/sdwis-2024-code2e-recoding"
 authors:
   - family-names: Kamalzadeh
     given-names: Mohammad
